@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga Kuota & Masa Aktif</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: #e9ecef;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 25px;
+            width: 100%;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4a89c1;
+            display: inline-block;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+            border: 1px solid #b0b0b0;
+        }
+        
+        th {
+            background-color: #eef2f5;
+            color: #1e3a5f;
+            font-weight: 600;
+            padding: 12px 10px;
+            text-align: left;
+            border: 1px solid #a0a0a0;
+        }
+        
+        td {
+            padding: 10px 12px;
+            border: 1px solid #a0a0a0;
+        }
+        
+        /* Kolom NO */
+        td:first-child {
+            text-align: center;
+            width: 45px;
+            background-color: #fafcfc;
+            font-weight: 500;
+        }
+        
+        /* Kolom HARGA */
+        td:nth-child(3) {
+            font-weight: 600;
+            color: #0c5c3b;
+        }
+        
+        /* Kolom VERSI */
+        td:last-child {
+            color: #4a5568;
+        }
+        
+        /* Baris genap */
+        tr:nth-child(even) {
+            background-color: #f8fafd;
+        }
+        
+        /* Hover efek */
+        tr:hover {
+            background-color: #e2f0fa;
+        }
+        
+        .note {
+            margin-top: 18px;
+            color: #b22222;
+            font-size: 13.5px;
+            font-style: italic;
+            font-weight: 500;
+            padding-top: 12px;
+            border-top: 1px dashed #ccc;
+            text-align: right;
+        }
+        
+        .table-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+        
+        .item-count {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        /* Responsive */
+        @media (max-width: 700px) {
+            .card {
+                padding: 18px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- TABLE 1: KUOTA CIRCLE -->
+        <div class="card">
+            <div class="table-title">
+                <h2>📶 Daftar Harga Kuota Circle</h2>
+                <span class="item-count">16 item</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>JENIS KUOTA</th>
+                            <th>HARGA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1.</td><td>5GB – 9GB</td><td>IDR 22.000</td></tr>
+                        <tr><td>2.</td><td>10GB – 14GB</td><td>IDR 27.000</td></tr>
+                        <tr><td>3.</td><td>15GB – 19GB</td><td>IDR 32.000</td></tr>
+                        <tr><td>4.</td><td>20GB – 24GB</td><td>IDR 37.000</td></tr>
+                        <tr><td>5.</td><td>25GB – 29GB</td><td>IDR 42.000</td></tr>
+                        <tr><td>6.</td><td>30GB – 34GB</td><td>IDR 47.000</td></tr>
+                        <tr><td>7.</td><td>35GB – 39GB</td><td>IDR 52.000</td></tr>
+                        <tr><td>8.</td><td>40GB – 44GB</td><td>IDR 58.000</td></tr>
+                        <tr><td>9.</td><td>45GB – 49GB</td><td>IDR 63.000</td></tr>
+                        <tr><td>10.</td><td>50GB – 54GB</td><td>IDR 68.000</td></tr>
+                        <tr><td>11.</td><td>55GB – 59GB</td><td>IDR 74.000</td></tr>
+                        <tr><td>12.</td><td>60GB – 64GB</td><td>IDR 79.000</td></tr>
+                        <tr><td>13.</td><td>65GB – 69GB</td><td>IDR 84.000</td></tr>
+                        <tr><td>14.</td><td>70GB – 74GB</td><td>IDR 89.000</td></tr>
+                        <tr><td>15.</td><td>75GB – 79GB</td><td>IDR 95.000</td></tr>
+                        <tr><td>16.</td><td>80GB – 84GB</td><td>IDR 100.000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="note">*Harga Sewaktu-Waktu Bisa Berubah</div>
+        </div>
+
+        <!-- TABLE 2: KUOTA AKRAB -->
+        <div class="card">
+            <div class="table-title">
+                <h2>🤝 Daftar Harga Kuota Akrab</h2>
+                <span class="item-count">8 item</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>JENIS KUOTA</th>
+                            <th>HARGA</th>
+                            <th>VERSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1.</td><td>40-42 GB</td><td>IDR 75.000</td><td>1,2,3</td></tr>
+                        <tr><td>2.</td><td>49 GB</td><td>IDR 77.000</td><td>2</td></tr>
+                        <tr><td>3.</td><td>52-54 GB</td><td>IDR 80.000</td><td>1</td></tr>
+                        <tr><td>4.</td><td>70 GB</td><td>IDR 90.000</td><td>1</td></tr>
+                        <tr><td>5.</td><td>90-92 GB</td><td>IDR 110.000</td><td>1,2,3</td></tr>
+                        <tr><td>6.</td><td>52 GB</td><td>IDR 78.000</td><td>2</td></tr>
+                        <tr><td>7.</td><td>65 GB</td><td>IDR 86.000</td><td>2</td></tr>
+                        <tr><td>8.</td><td>78 GB</td><td>IDR 95.000</td><td>2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="note">*Harga Sewaktu-Waktu Bisa Berubah</div>
+        </div>
+
+        <!-- TABLE 3: MASA AKTIF KARTU -->
+        <div class="card">
+            <div class="table-title">
+                <h2>⏳ Daftar Harga Masa Aktif Kartu</h2>
+                <span class="item-count">7 item</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>JENIS MASTIF</th>
+                            <th>HARGA</th>
+                            <th>VERSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1.</td><td>XL 1 BULAN</td><td>IDR 5.000</td><td>OTP</td></tr>
+                        <tr><td>2.</td><td>XL 1 BULAN</td><td>IDR 11.000</td><td>NON OTP</td></tr>
+                        <tr><td>3.</td><td>AXIS 1 BULAN</td><td>IDR 11.000</td><td>NON OTP</td></tr>
+                        <tr><td>4.</td><td>AS 1 BULAN</td><td>IDR 19.000</td><td>NON OTP</td></tr>
+                        <tr><td>5.</td><td>AS 3 BULAN</td><td>IDR 45.000</td><td>NON OTP</td></tr>
+                        <tr><td>6.</td><td>AS 1 TAHUN</td><td>IDR 160.000</td><td>NON OTP</td></tr>
+                        <tr><td>7.</td><td>TRI 4 BULAN</td><td>IDR 12.000</td><td>NON OTP</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="note">*Harga Sewaktu-Waktu Bisa Berubah</div>
+        </div>
+    </div>
+</body>
+</html>
